@@ -1,0 +1,28 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <link rel="stylesheet" href="{{root}}css/all.min.css" />
+  <link rel="stylesheet" href="{{root}}css/bootstrap.min.css" />
+  <link rel="stylesheet" href="{{root}}css/app.min.css" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>{{ title }}</title>
+  <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1">
+  <link rel="icon" href="{{root}}/assets/images/favicon.png" sizes="32x32">
+</head>
+
+<body class={{body-class}} id={{body-id}}>
+  {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened body are
+  created. --}}
+  {{> body}}
+</body>
+<script type='text/javascript' src='{{root}}js/jquery.min.js'></script>
+<script type='text/javascript' src='{{root}}js/popper.min.js'></script>
+<script type='text/javascript' src='{{root}}js/bootstrap.min.js'></script>
+<script type='text/javascript' src='{{root}}js/main.js'></script>
+
+
+</html>
